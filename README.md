@@ -22,8 +22,6 @@ Voice input/output support
 
 LangChain
 Gemini (Google Generative AI)
-Spoonacular API
-TheMealDB API
 📁 Project Structure
 food-dictionary-ai/
 ├── food_dictionary_notebook.ipynb  # Main notebook with code and logic
