@@ -1,6 +1,6 @@
 # Food Dictionary & Culinary Explorer
 
-![Cuisine Banner](https://example.com/path-to-your-banner-image.jpg) <!-- Replace with actual image -->
+![Cuisine Banner](https://slofoodbank.org/wp-content/uploads/2023/07/Food-as-Culture.png) <!-- Replace with actual image -->
 
 A conversational AI-powered food dictionary that explores recipes, cultural backgrounds, and historical contexts of dishes from around the world.
 
@@ -19,6 +19,9 @@ A conversational AI-powered food dictionary that explores recipes, cultural back
 - **Wikipedia API** - For verified factual information
 - **Gradio** - Web interface
 - **Python** - Backend logic
+- Visual Studio Code (VS Code)
+- [Poetry](https://python-poetry.org/) for dependency management (optional but recommended)
+
 
 ## Installation
 
@@ -71,5 +74,13 @@ Note: This application requires a valid Google Gemini API key to function proper
 5. **Example Queries**: Helps users understand how to interact with your app
 6. **Responsive Design**: Renders well on GitHub's markdown viewer
 
+🧠 Features
+Cuisine Information: Ask about various cuisines, and the assistant will provide details.
 
+History of Dishes: Inquire about the history of specific dishes.
+
+Interactive Interface: Utilize Gradio for a user-friendly chat interface.
+
+⚠️ Deprecation Notice
+The initialize_agent method from LangChain is deprecated. It's recommended to use LangGraph's prebuilt agents for new projects. For more information on migrating to LangGraph, refer to the LangChain Migration Guide.
 
