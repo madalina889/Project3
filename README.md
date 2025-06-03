@@ -1,73 +1,75 @@
-🥘 Food Dictionary AI
+# Food Dictionary & Culinary Explorer
 
-Food Dictionary AI is an interactive Python-based project powered by LangChain and Google's Gemini API that allows users to:
+![Cuisine Banner](https://example.com/path-to-your-banner-image.jpg) <!-- Replace with actual image -->
 
-🔍 Search for dishes by cuisine
-📜 Learn the historical background of a dish
-🍽️ Get a list of recipes and ingredients
-🛒 Generate shopping lists for selected recipes (coming soon)
-This project integrates large language models and food-related APIs to build an intelligent, conversational food encyclopedia.
+A conversational AI-powered food dictionary that explores recipes, cultural backgrounds, and historical contexts of dishes from around the world.
 
-🚀 Features
+## Features
 
-Cuisine Exploration: Enter a cuisine (e.g., "Turkish") to get a list of traditional dishes.
-Dish History: Ask for the origin, history, and cultural context of any dish.
-Recipe Fetching: Use APIs like Spoonacular or TheMealDB to get detailed recipes.
-Future Add-ons:
-Automated meal planning
-Ingredient substitution
-Calorie and nutritional info
-Voice input/output support
-🧠 Powered By
+- 🍲 **Recipe Discovery**: Get detailed recipes for traditional dishes
+- 🌍 **Cultural Insights**: Learn about the cultural significance of foods
+- 📜 **Historical Context**: Discover the origins and evolution of dishes
+- 🔍 **Multi-source Knowledge**: Combines AI with verified information from Wikipedia
+- 💬 **Interactive Chat**: Natural language interface for food exploration
 
-LangChain
-Gemini (Google Generative AI)
-📁 Project Structure
-food-dictionary-ai/
-├── food_dictionary_notebook.ipynb  # Main notebook with code and logic
-├── requirements.txt                # Dependencies
-└── README.md                       # Project documentation
-🔧 Installation
+## Technologies Used
 
-1. Clone the repository
-git clone https://github.com/yourusername/food-dictionary-ai.git
-cd food-dictionary-ai
-2. Create a virtual environment
-python -m venv env
-source env/bin/activate  # On Windows use `env\\Scripts\\activate`
-3. Install dependencies
+- **LangChain** - AI agent framework
+- **Google Gemini** - Large Language Model (gemini-1.5-flash)
+- **Wikipedia API** - For verified factual information
+- **Gradio** - Web interface
+- **Python** - Backend logic
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/madalina889/food-dictionary.git
+   cd food-dictionary
+   Install dependencies:
+bash
 pip install -r requirements.txt
-4. Set up your .env file
-GEMINI_API_KEY=your_google_generative_ai_key
-RECIPE_API_KEY=your_spoonacular_or_themealdb_key
-💡 How It Works
+Set up your environment:
+Create a .env file
+Add your Gemini API key:
+GEMINI_API_KEY=your_api_key_here
+Usage
 
-The notebook uses:
+Run the application:
 
-LLM (Gemini via LangChain) to interpret questions and generate responses
-CommaSeparatedListOutputParser to format results into user-friendly lists
-Wikipedia & Meal APIs to retrieve real-time data about food
-📸 Sample Use Cases
+bash
+python app.py
+Then open your browser to http://localhost:7861 to access the web interface.
 
-Example 1: Explore Cuisine
-Which cuisine do you want to know about?
-> Turkish
-Outputs:
+Example queries:
 
-Popular appetizers, mains, desserts
-Cultural context
-Example 2: Historical Info
-Tell me about history of:
-> Adana Kebabı
-Outputs:
+"Tell me about the history of ramen"
+"Give me a traditional recipe for coq au vin"
+"What's the cultural significance of tacos in Mexico?"
+"Explain how pizza evolved in different countries"
+Project Structure
 
-Origin city
-Traditional preparation
-Cultural significance
-⚠️ Disclaimer
+food-dictionary/
+├── app.py                # Main application file
+├── requirements.txt      # Python dependencies
+├── .env                  # Environment variables
+├── README.md             # This file
+└── assets/               # Optional: for images/screenshots
+Contributing
 
-This project is intended for educational purposes and may not always provide accurate or up-to-date information. Use verified sources when cooking or sharing dietary information.
-📜 License
+Contributions are welcome! Please open an issue or submit a pull request for any improvements.
 
-MIT License
+Note: This application requires a valid Google Gemini API key to function properly.
+
+
+### Key Features of This README:
+
+1. **Professional Structure**: Follows standard GitHub project documentation format
+2. **Visual Appeal**: Includes space for banner image and emojis for better readability
+3. **Comprehensive Sections**: Covers all essential information for users and contributors
+4. **Clear Instructions**: Step-by-step setup and usage guide
+5. **Example Queries**: Helps users understand how to interact with your app
+6. **Responsive Design**: Renders well on GitHub's markdown viewer
+
+
 
